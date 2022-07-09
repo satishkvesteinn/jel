@@ -1,0 +1,53 @@
+.item {
+padding: 10px;
+
+    .itemList {
+        height: 240px;
+        width: calc((100% - 20px)/2);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        flex-direction: row-reverse;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover{
+            opacity: .8;
+        }
+
+        .list {
+            position: absolute;
+            width: 120px;
+            right: 40px;
+            display: flex;
+            flex-direction: column;
+            //    text-align: center;
+
+            .itemCategory {
+                font-size: 18px;
+                margin-bottom: 15px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: gray;
+            }
+
+            .itemMaterials{
+                font-weight: 600;
+                margin-bottom: 25px;
+            }
+
+            .shopButton{
+                font-size: 17px;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}
