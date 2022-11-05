@@ -3,13 +3,13 @@ import React from 'react';
 // import { Counter } from './features/counter/Counter';
 import './App.css';
 import Shop from './pages/shop/Shop';
-// import Home from './pages/home/Home'
+import Home from './pages/home/Home'
 // import {AccessTime} from '@mui/material'
 
 function App() {
   return (
     <>
-      {/* <Home /> */}
+      <Home />
       <Shop/>
     </>
   );

@@ -7,8 +7,8 @@ import productData from '../../data/productData';
 
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/grid";
+// import "swiper/css";
+// import "swiper/css/grid";
 import "swiper/css/pagination";
 
 // import "./styles.css";
@@ -29,7 +29,6 @@ const CartItemCrousel = ({ row }) => {
             grid={{
                 rows: row,
                 fill: "row",
-                column: "column"
             }}
             breakpoints={{
                 // when window width is >= 150px
@@ -51,7 +50,7 @@ const CartItemCrousel = ({ row }) => {
                 },
                 // when window width is >: 640px
                 768: {
-                    slidesPerView: 4,
+                    slidesPerView: 6,
                     spaceBetween: 25,
                     navigation: true
                 }
